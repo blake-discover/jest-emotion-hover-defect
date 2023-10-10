@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "react", "unused-imports"],
   rules: {
+    "react/no-unknown-property": ["error", { ignore: ["css"] }],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-unused-vars": "off",
