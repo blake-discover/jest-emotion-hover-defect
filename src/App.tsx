@@ -1,21 +1,16 @@
-import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+
+const StyledButton = styled.button`
+  background-color: aqua;
+  &:hover {
+    background-color: beige;
+  }
+`;
 
 function App() {
   return (
     <section>
-      <button
-        css={css`
-          padding: 32px;
-          background-color: hotpink;
-          font-size: 24px;
-          border-radius: 4px;
-          &:hover {
-            color: pink;
-          }
-        `}
-      >
-        Submit
-      </button>
+      <StyledButton>Submit</StyledButton>
     </section>
   );
 }
