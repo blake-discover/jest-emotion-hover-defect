@@ -18,8 +18,8 @@ const buttonCss = css`
 function App() {
   return (
     <section>
-      <button css={buttonCss}>Styled</button>
       <StyledButton>Styled</StyledButton>
+      <button css={buttonCss}>CSS</button>
     </section>
   );
 }
