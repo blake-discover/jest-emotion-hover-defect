@@ -9,8 +9,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "react-app",
-    "react-app/jest",
     "plugin:jsx-a11y/recommended",
   ],
   overrides: [
@@ -29,5 +27,10 @@ module.exports = {
   rules: {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
 };
