@@ -13,6 +13,10 @@ describe("App", () => {
     const { getByText } = render(<App />);
     const button = getByText("Submit");
 
+    Array.from(document.querySelectorAll("style")).forEach((tag) => {
+      console.log(tag.innerHTML);
+    });
+
     expect(button).toHaveStyle({ "background-color": "aqua" });
   });
 });
