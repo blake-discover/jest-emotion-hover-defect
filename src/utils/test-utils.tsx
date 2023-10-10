@@ -1,14 +1,10 @@
 import React from "react";
 import { render, RenderOptions } from "@testing-library/react";
 import { ThemeProvider } from "@emotion/react";
-import { CssBaseline } from "@mui/material";
 import theme from "../theme";
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => (
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    {children}
-  </ThemeProvider>
+  <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 
 const customRender = (
